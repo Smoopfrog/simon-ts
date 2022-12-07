@@ -1,3 +1,38 @@
-body {
+#circle {
+  border-radius: 50%;
+  height: 600px;
+  width: 600px;
   background-color: black;
+}
+
+.button {
+  
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-width: 1px;
+}
+
+#yellow-button {
+  background-color: yellow;
+  border-radius: 100px 0 0 0;
+
+}
+#blue-button {
+  background-color: blue;
+  border-radius: 0 100px  0 0;
+
+
+}
+#red-button {
+  background-color: red;
+  border-radius: 0 0 100px 0;
+
+
+}
+#green-button {
+  background-color:green;
+  border-radius: 0 0  0 100px;
+
+
 }

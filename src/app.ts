@@ -3,11 +3,10 @@ const app = express();
 const port = 8001;
 
 app.set('view engine', 'ejs');
-
-app.use(express.urlencoded({ extended: true }));
+app.use(express.static('views'));
 
 app.get('/', function(req, res) {
-  res.render('./index');
+  res.render('index');
 });
 
 
