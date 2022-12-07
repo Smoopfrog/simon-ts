@@ -1,38 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 #circle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
   border-radius: 50%;
   height: 600px;
   width: 600px;
   background-color: black;
 }
 
+.inner-circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  line-height: 95px;
+  text-align: center;
+  color: #36383f;
+  font-size: 50px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
 .button {
-  
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   border: 1px solid black;
   border-width: 1px;
 }
 
 #yellow-button {
   background-color: yellow;
-  border-radius: 100px 0 0 0;
-
+  border-radius: 100% 3% 0 3%;
 }
 #blue-button {
   background-color: blue;
-  border-radius: 0 100px  0 0;
-
-
+  border-radius: 3% 100% 3% 0;
 }
 #red-button {
   background-color: red;
-  border-radius: 0 0 100px 0;
-
-
+  border-radius: 3% 0 3% 100%;
 }
 #green-button {
-  background-color:green;
-  border-radius: 0 0  0 100px;
+  background-color: green;
+  border-radius: 0 3% 100% 3%;
+}
 
-
+#green-button:hover,
+#red-button:hover,
+#yellow-button:hover,
+#blue-button:hover,
+.hover {
+  box-shadow: 0 0 30px #979caf;
+  border: 1px solid #979caf;
+  cursor: pointer;
 }
